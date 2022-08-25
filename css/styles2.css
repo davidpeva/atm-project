@@ -1,0 +1,91 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.cajacentro {
+    border: 2px #4f4f4f solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 12% auto !important;
+    width: 450px;
+    height: 100%;
+    background-color: #bbbbbb;
+    padding: 3%;
+}
+
+header h5, header h2, aside h4, aside p {
+    color: #ffffff;
+    margin: 70px 0 10PX 0;
+    text-align: right;
+}
+
+.bienvenido {
+    background-color: #7b7bff;
+    border: 2px #4f4f4f solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 450px;
+}
+
+
+.tamañoresultados {
+    font-size: 0.8rem;
+}
+
+.columna1 {
+    height: 80%;
+    width: 65%;
+}
+
+.columna2 {
+    height: 80%;
+    width: 25%;
+}
+
+.gridbotones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+}
+
+button {
+    background-color: #7b7bff;
+    color: #000000;
+    border: 2px #4f4f4f solid;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4f4f4f;
+}
+
+.nada {
+    border: none;
+    background-color: #bbbbbb;
+}
+
+.nada:hover {
+    background-color: #bbbbbb;
+}
+
+.logout {
+    background-color: #963726;
+    color: #ffffff;
+}

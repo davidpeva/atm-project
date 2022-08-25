@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles2.css">
+    
+    <title>ATM</title>
+</head>
+<body>
+    <main id="contenedor">
+            <div class="cajacentro">
+                <section class="columna1">
+                    <div class="bienvenido" id="bienvenida">
+                    
+                    </div>
+                <header> 
+                    <h5 id="operaciones" class="tamañoresultados">-</h5>
+                    <h2 id="total">0</h2>
+                </header>
+                <div class="gridbotones">
+                    <button onclick="CapturarDatos('7')">7</button>
+                    <button onclick="CapturarDatos('8')">8</button>
+                    <button onclick="CapturarDatos('9')">9</button>
+                    <button onclick="CapturarDatos('+')">Consignar +</button>
+                    <button onclick="CapturarDatos('4')">4</button>
+                    <button onclick="CapturarDatos('5')">5</button>
+                    <button onclick="CapturarDatos('6')">6</button>
+                    <button onclick="CapturarDatos('-')">Retirar -</button>
+                    <button onclick="CapturarDatos('1')">1</button>
+                    <button onclick="CapturarDatos('2')">2</button>
+                    <button onclick="CapturarDatos('3')">3</button>
+                    <button onclick="CapturarDatos('=')">Saldo =</button>
+                    <button onclick="CapturarDatos('c')">c</button>
+                    <button onclick="CapturarDatos('0')">0</button>
+                    <button class="nada"></button>
+                    <button onclick="logout()" class="logout">Cerrar Sesión</button>
+                </div>
+                </section>
+                <aside class="columna2">
+                    <h4 id="nuevosaldo" ></h4>
+                    <p id="historial" class="tamañoresultados"></p>
+                </aside>
+                </div>
+
+                <script src="js/atm.js"></script>
+                <script type="text/javascript">
+                    function disableBack() { window.history.forward(); }
+                    setTimeout("disableBack()", 0);
+                    window.onunload = function () { null };
+                </script>
+    </main>
+
+
+</body>
+</html>
