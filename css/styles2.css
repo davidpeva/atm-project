@@ -8,7 +8,7 @@ body {
 
 #contenedor {
     display: flex;
-    max-width: 1024px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@ body {
     border: 2px #4f4f4f solid;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: 12% auto !important;
     width: 450px;
     height: 100%;
@@ -88,4 +88,28 @@ button:hover {
 .logout {
     background-color: #963726;
     color: #ffffff;
+}
+
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .cajacentro {
+        border: 2px #4f4f4f solid;
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        margin: 12% auto !important;
+        width: 320px;
+        height: 100%;
+        background-color: #bbbbbb;
+        padding: 3%;
+    }
+    .bienvenido {
+        background-color: #7b7bff;
+        border: 2px #4f4f4f solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px 0;
+        position: absolute;
+        width: 320px;
+        }
 }

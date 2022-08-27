@@ -14,7 +14,7 @@ body{
 
 .cajacentro {
     border: 2px #4f4f4f solid;
-    margin: 12% auto !important;
+    margin: 12% 12% !important;
     width: 450px;
     height: 100%;
     background-color: #bbbbbb;
